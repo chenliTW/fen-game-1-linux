@@ -33,7 +33,8 @@ void reset(){
     snake[1].push(SIZE/2);
 }
 
-void draw(){//�e��
+void draw(){//µeÀð
+    fill (world,world+(SIZE*SIZE),32);
     for(int y=0;y<SIZE;++y){
         world[y][0]='|';
         world[y][SIZE-1]='|';
@@ -50,7 +51,7 @@ void draw(){//�e��
     food();
 }
 
-void nextmove(int d){//�U�Ӱʧ@
+void nextmove(int d){//¤U­Ó°Ê§@
     switch(d){
         case 1:
             snake[0].push(snake[0].back()+1);
@@ -61,7 +62,7 @@ void nextmove(int d){//�U�Ӱʧ@
                 point++;
                 food();
             }else{
-                world[snake[1].front()][snake[0].front()]=' ';
+                world[snake[1].front()][snake[0].front()]=32;
                 snake[0].pop();
                 snake[1].pop();
             }
@@ -75,7 +76,7 @@ void nextmove(int d){//�U�Ӱʧ@
                 point++;
                 food();
             }else{
-                world[snake[1].front()][snake[0].front()]=' ';
+                world[snake[1].front()][snake[0].front()]=32;
                 snake[0].pop();
                 snake[1].pop();
             }
@@ -89,7 +90,7 @@ void nextmove(int d){//�U�Ӱʧ@
                 point++;
                 food();
             }else{
-                world[snake[1].front()][snake[0].front()]=' ';
+                world[snake[1].front()][snake[0].front()]=32;
                 snake[0].pop();
                 snake[1].pop();
             }
@@ -103,7 +104,7 @@ void nextmove(int d){//�U�Ӱʧ@
                 point++;
                 food();
             }else{
-                world[snake[1].front()][snake[0].front()]=' ';
+                world[snake[1].front()][snake[0].front()]=32;
                 snake[0].pop();
                 snake[1].pop();
             }
@@ -147,7 +148,6 @@ bool die(int x,int y){
 }
 
 void lose(){
-    memset(world,0,sizeof(world));
     system("clear");
     cout<<"-----you lose-----"<<endl;
     reset();
