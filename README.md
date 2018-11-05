@@ -1,5 +1,5 @@
 # 玩了會懷疑人生系列-1-貪食蛇(Linux版)
-BUILD WITH CODEBLOCKS RUN IN DEBAIN
+COMPILED WITH g++ RUN IN DEBAIN
 
 1. 執行下列指令
 ```
