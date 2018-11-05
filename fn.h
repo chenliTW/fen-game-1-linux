@@ -12,7 +12,7 @@
 #include <termios.h>
 #include <sys/ioctl.h>
 
-#define SIZE 16
+#define SIZE 12
 
 bool kbhit();
 void reset();
