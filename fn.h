@@ -8,9 +8,9 @@
 #include<queue>
 #include<time.h>
 #include<stdlib.h>
-#include<algorithm>
-#include<termios.h>
-#include<sys/ioctl.h>
+
+#include <termios.h>
+#include <sys/ioctl.h>
 
 #define SIZE 16
 

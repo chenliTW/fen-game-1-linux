@@ -33,8 +33,7 @@ void reset(){
     snake[1].push(SIZE/2);
 }
 
-void draw(){//µeÀð
-    fill (world,world+(SIZE*SIZE),32);
+void draw(){//�e��
     for(int y=0;y<SIZE;++y){
         world[y][0]='|';
         world[y][SIZE-1]='|';
@@ -51,7 +50,7 @@ void draw(){//µeÀð
     food();
 }
 
-void nextmove(int d){
+void nextmove(int d){//�U�Ӱʧ@
     switch(d){
         case 1:
             snake[0].push(snake[0].back()+1);
@@ -129,7 +128,7 @@ void frame(){
     string output;
     output.clear();
     for(int y=0;y<SIZE;++y){
-        output+=(string(world[y],SIZE)+"\n");
+        output+=(string(world[y],16)+"\n");
     }
     cout<<output;
     cout<<"point:"<<point<<"point(s)"<<endl;
@@ -148,6 +147,7 @@ bool die(int x,int y){
 }
 
 void lose(){
+    memset(world,0,sizeof(world));
     system("clear");
     cout<<"-----you lose-----"<<endl;
     reset();
