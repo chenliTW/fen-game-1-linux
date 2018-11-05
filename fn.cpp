@@ -42,6 +42,11 @@ void draw(){//µeÀð
         world[0][x]='-';
         world[SIZE-1][x]='-';
     }
+    for(int y=1;y<SIZE-1;++y){
+        for(int x=1;x<SIZE-1;++x){
+            world[y][x]=' ';
+        }
+    }
     world[0][0]='*';
     world[SIZE-1][0]='*';
     world[0][SIZE-1]='*';
