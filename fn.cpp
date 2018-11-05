@@ -130,7 +130,7 @@ void frame(){
     for(int y=0;y<SIZE;++y){
         for(int x=0;x<SIZE;++x){
             if(world[y][x]==' '){
-                printf(" ");
+                printf("0");
             }else{
                 printf("%c",world[y][x]);   
             }
