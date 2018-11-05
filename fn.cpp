@@ -33,7 +33,7 @@ void reset(){
     snake[1].push(SIZE/2);
 }
 
-void draw(){//�e��
+void draw(){//µeÀð
     for(int y=0;y<SIZE;++y){
         world[y][0]='|';
         world[y][SIZE-1]='|';
@@ -50,7 +50,7 @@ void draw(){//�e��
     food();
 }
 
-void nextmove(int d){//�U�Ӱʧ@
+void nextmove(int d){//¤U­Ó°Ê§@
     switch(d){
         case 1:
             snake[0].push(snake[0].back()+1);
@@ -128,9 +128,9 @@ void frame(){
     string output;
     output.clear();
     for(int y=0;y<SIZE;++y){
-        output+=(string(world[y],16)+"\n");
+        cout<<string(world[y],16)<<endl;
     }
-    cout<<output;
+    //cout<<output;
     cout<<"point:"<<point<<"point(s)"<<endl;
     cout<<"level:"<<(point/5)+1<<endl;
 }
