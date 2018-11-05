@@ -9,6 +9,6 @@ BUILD WITH CODEBLOCKS RUN IN DEBAIN
  g++ -lcurses -o snake main.cpp fn.cpp
  ./snake
 ```
-5.enjoy!
+2.enjoy!
 
 用WASD控制上下左右(記得換成英文輸入法) W:上 S:下 A:左 D:右
