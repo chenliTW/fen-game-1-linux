@@ -128,16 +128,9 @@ void frame(){
     string output;
     output.clear();
     for(int y=0;y<SIZE;++y){
-        for(int x=0;x<SIZE;++x){
-            if(world[y][x]==0){
-                printf(" ");
-            }else{
-                printf("%c",world[y][x]);   
-            }
-        }
-        printf("\n");
+        output+=(world[y]+" ");
     }
-    //cout<<output;
+    cout<<output;
     cout<<"point:"<<point<<"point(s)"<<endl;
     cout<<"level:"<<(point/5)+1<<endl;
 }
