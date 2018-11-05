@@ -9,7 +9,7 @@ int main(){
     int direction=1;
     while(1){
         frame();
-        for(int time=0;time<150-(return_point()/5);++time){
+        for(int time=0;time<150-(return_point()/5)*5;++time){
             if (kbhit()){
                 char ch = getchar();
                 switch((int)ch){
