@@ -133,7 +133,7 @@ void frame(){
     string output;
     output.clear();
     for(int y=0;y<SIZE;++y){
-        output+=(string(world[y],size)+" ");
+        output+=(string(world[y],SIZE)+" ");
     }
     cout<<output;
     cout<<"point:"<<point<<"point(s)"<<endl;
