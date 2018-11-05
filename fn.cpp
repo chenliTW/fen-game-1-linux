@@ -128,7 +128,10 @@ void frame(){
     string output;
     output.clear();
     for(int y=0;y<SIZE;++y){
-        cout<<string(world[y],16)<<endl;
+        for(int x=0;x<SIZE;++x){
+            printf("%c",world[y][x]);   
+        }
+        printf("\n");
     }
     //cout<<output;
     cout<<"point:"<<point<<"point(s)"<<endl;
