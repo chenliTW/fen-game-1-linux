@@ -51,7 +51,7 @@ void draw(){//µeÀð
     food();
 }
 
-void nextmove(int d){//¤U­Ó°Ê§@
+void nextmove(int d){
     switch(d){
         case 1:
             snake[0].push(snake[0].back()+1);
@@ -62,7 +62,7 @@ void nextmove(int d){//¤U­Ó°Ê§@
                 point++;
                 food();
             }else{
-                world[snake[1].front()][snake[0].front()]=32;
+                world[snake[1].front()][snake[0].front()]=' ';
                 snake[0].pop();
                 snake[1].pop();
             }
@@ -76,7 +76,7 @@ void nextmove(int d){//¤U­Ó°Ê§@
                 point++;
                 food();
             }else{
-                world[snake[1].front()][snake[0].front()]=32;
+                world[snake[1].front()][snake[0].front()]=' ';
                 snake[0].pop();
                 snake[1].pop();
             }
@@ -90,7 +90,7 @@ void nextmove(int d){//¤U­Ó°Ê§@
                 point++;
                 food();
             }else{
-                world[snake[1].front()][snake[0].front()]=32;
+                world[snake[1].front()][snake[0].front()]=' ';
                 snake[0].pop();
                 snake[1].pop();
             }
@@ -104,7 +104,7 @@ void nextmove(int d){//¤U­Ó°Ê§@
                 point++;
                 food();
             }else{
-                world[snake[1].front()][snake[0].front()]=32;
+                world[snake[1].front()][snake[0].front()]=' ';
                 snake[0].pop();
                 snake[1].pop();
             }
@@ -129,7 +129,7 @@ void frame(){
     string output;
     output.clear();
     for(int y=0;y<SIZE;++y){
-        output+=(string(world[y],16)+"\n");
+        output+=(string(world[y],SIZE)+"\n");
     }
     cout<<output;
     cout<<"point:"<<point<<"point(s)"<<endl;
